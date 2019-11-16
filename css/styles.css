@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select, button {
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+select {
+    background-color: white;
+}
+
+button {
+    border: 1px solid transparent;
+    background-color: #1e5cff;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+}
+
+button:hover {
+    background-color: #224aff;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.container-small {
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+}
+
+.container-medium {
+    grid-template-columns: repeat(6, 95px);
+    grid-template-rows: repeat(6, 95px);
+}
+
+.container-large {
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+}
+
+.container-block {
+    pointer-events: none;
+}
+
+.card {
+    border: 1px solid chocolate;
+    background-color: bisque;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 100%;
+    display: none;
+}
+
+.card-opened {
+    pointer-events: none;
+}
+
+.card-opened img {
+    display: inline;
+}
